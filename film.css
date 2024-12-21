@@ -1,0 +1,37 @@
+body{
+    background: rgb(20, 20, 20);
+    overflow: hidden;
+    margin: 50% 0 0 0;
+    position: relative;
+}
+body::after{
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(180deg,);
+}
+.wrapper{
+    display: flex;
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    perspective: 450px;
+}
+.scroll-text{
+    color: yellow;
+    font-size: 3vw;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-align: justify;
+    position: relative;
+    animation: scroll 60s linear forwards;
+}
+h1 , h2 {
+    text-align: center;
+}
+@keyframes scroll {
+    from { top: 0; transform:  translatez(0) rotateX(20deg) }
+    to {top: -7500px;  transform:  translatez(-2500px) rotateX(21deg)}
+}
