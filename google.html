@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Logo Styles */
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 200px;
+        }
+
+        /* Search Bar Styles */
+        .search-bar {
+            width: 90%;
+            max-width: 600px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            background-color: #fff;
+            padding: 10px 15px;
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-bar input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .search-bar button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search-bar button img {
+            width: 20px;
+        }
+
+        /* Buttons Styles */
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            font-size: 14px;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #f8f9fa;
+            border: 1px solid #dfe1e5;
+            border-radius: 4px;
+            cursor: pointer;
+            color: #202124;
+        }
+
+        .buttons button:hover {
+            background-color: #f1f3f4;
+            border-color: #d1d1d1;
+        }
+
+        /* Footer Styles */
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #f1f3f4;
+            padding: 10px 0;
+            font-size: 12px;
+            color: #5f6368;
+        }
+
+        footer a {
+            color: #5f6368;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo Section -->
+    <div class="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+    </div>
+
+    <!-- Search Bar Section -->
+    <form class="search-bar">
+        <input type="text" placeholder="Search Google or type a URL">
+        <button type="submit">
+            <img src="https://www.iconfinder.com/data/icons/interface-line-2/24/search_magnifying_glass_interface-512.png" alt="Search Icon">
+        </button>
+    </form>
+
+    <!-- Buttons Section -->
+    <div class="buttons">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <a href="#">About</a>
+        <a href="#">Advertising</a>
+        <a href="#">Business</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Settings</a>
+    </footer>
+</body>
+</html>
